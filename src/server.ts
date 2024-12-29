@@ -7,7 +7,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 initializeApp({
-  credential: applicationDefault(), 
+  credential: applicationDefault(),  // firebase will use env GOOGLE_APPLICATION_CREDENTIALS to find the file from the path
   databaseURL: process.env.FIREBASE_URL, 
 });
 
